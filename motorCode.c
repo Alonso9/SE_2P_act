@@ -1,6 +1,6 @@
 #include <16F877A.h>                                     //PIC 16F877A
-#device ADC=10                                           //Habilitamos el uso del módulo ADC
-#fuses XT, NOWDT, PUT, NOLVP, NOPROTECT                  //Bits de configuración
+#device ADC=10                                           //Habilitamos el uso del mï¿½dulo ADC
+#fuses XT, NOWDT, PUT, NOLVP, NOPROTECT                  //Bits de configuraciï¿½n
 #use delay(clock=4000000)                                //Crista de 4HMz
 #use fast_io(A)   
 #use fast_io(B)   
@@ -14,7 +14,6 @@ int1 vel;   //velocidad == a2
 
 void main(){
    set_tris_a(0b00000000);
-   //set_tris_e(0b11111111);
    set_tris_c(0);
    set_tris_e(0);
    //set_tris_c(0b11111111);
